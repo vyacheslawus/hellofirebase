@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Выводим заголовок -->
+  <title>helloWorld</title>
+  <!-- Подключаем normalize -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Подключаем стили -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js" defer></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js" defer></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Создаем шапку сайта -->
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <h3 class="logo-title">Hello<br>WORLD</h3>
+        <!-- <img class="header-logo-image" src="img/translate.svg" alt="logo: Hueddu">  -->
+      </div>
+      <nav class="header-nav">
+        <ul class="header-menu">
+          <li class="header-menu-item"><a href="#" class="header-menu-link">FRESH</a></li>
+          <li class="header-menu-item"><a href="#" class="header-menu-link">BEST</a></li>
+          <li class="header-menu-item"><a href="#" class="header-menu-link">HOT</a></li>
+          <li class="header-menu-item"><a href="#" class="header-menu-link">FOLLOWERS</a></li>
+        </ul>
+        
+      </nav>
+      <!-- /.header-nav -->
+      <div class="input-group search">
+        <input type="search" class="search-input" placeholder="Поиск по сайту">
+        <button class="search-button">
+          <img src="img/search.svg" alt="icon: search" class="search-icon">
+        </button>
+      </div>
+      <!-- /.input-group -->
+      <a href="#" class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <!-- /.header-wrapper -->
+  </header>
+
+  <div class="content">
+    <main class="posts">
+      <section class="post">
+        <div class="post-body">
+          <h2 class="post-title">THERE ARE POST-TITLE</h2>
+          <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis harum possimus accusamus quisquam ratione autem aspernatur a, odio ipsum molestiae vitae quae. Deleniti, ipsa corporis aliquid id atque totam mollitia possimus cupiditate accusamus sint ea vero laboriosam repellendus quis sit minima sequi, hic incidunt, nihil sunt suscipit reprehenderit! Asperiores sunt consequuntur in qui illo dolore reiciendis, nisi architecto quam praesentium, fuga possimus ab. Unde officia a quam ut eligendi? </p>
+          <div class="tags">
+            <a href="#" class="tag">#свежее</a>
+          </div>
+         </div>
+        <div class="post-footer">
+          <div class="post-buttons">
+            <button class="post-button likes">
+              <svg width="19" height="20" class="icon icon-like">
+                <use xlink:href="img/icons.svg#like"></use>
+              </svg>
+              <span class="likes-counter">26</span>
+            </button>
+            <button class="post-button comments">
+              <svg width="21" height="21" class="icon icon-comment">
+                <use xlink:href="img/icons.svg#comment"></use>
+              </svg>
+              <span class="comments-counter">157</span>
+            </button>
+            <button class="post-button save">
+              <svg width="19" height="19" class="icon icon-save">
+                <use xlink:href="img/icons.svg#save"></use>
+              </svg>
+            </button>
+            <button class="post-button share">
+              <svg width="17" height="19" class="icon icon-share">
+                <use xlink:href="img/icons.svg#share"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- /.post-buttons -->
+          <div class="post-author">
+            <div class="author-about">
+              <a href="#" class="author-username">chepallino</a>
+              <span class="post-time">5 минут назад</span>
+            </div>
+            <a href="#" class="author-link"><img src="img/avatar.jpeg" alt="avatar" class="author-avatar"></a>
+          </div>
+          <!-- /.post-author -->
+        </div>
+        <!-- /.post-footer -->
+      </section>
+      <section class="post">
+        <div class="post-body">
+          <h2 class="post-title">Заголовлок поста</h2>
+          <p class="post-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo facilis dignissimos soluta nihil. Modi incidunt debitis, reprehenderit quisquam iusto ex dolorem eius quae voluptatum. Vitae, iure! Vero debitis voluptas esse deleniti, cumque asperiores. Blanditiis, reiciendis amet modi quidem accusamus consequatur? Quam officia vero sequi mollitia facere. Deleniti repellat commodi a harum suscipit numquam quidem, ducimus rerum consequuntur, incidunt quis sapiente! </p>
+          <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, itaque saepe officiis illum laudantium tempora velit minima porro sapiente quo maiores quae veniam nostrum ipsa delectus doloremque aut ab exercitationem aperiam quibusdam nesciunt voluptatibus odit. Tenetur ex inventore odio, aspernatur necessitatibus dolorem quo quibusdam. Temporibus aut nesciunt, architecto quibusdam illo dicta tempora placeat? Enim quos voluptates quibusdam sunt temporibus cum! Debitis accusamus est quisquam iste, commodi consequatur accusantium ullam distinctio? </p>
+          <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quae non autem hic. Rerum reprehenderit facere, amet tempora perferendis at architecto totam debitis vitae alias aut ducimus. Facilis, aliquid doloremque. </p>
+          <div class="tags">
+            <a href="#" class="tag">#свежее</a>
+            <a href="#" class="tag">#новое</a>
+            <a href="#" class="tag">#горячее</a>
+            <a href="#" class="tag">#мое</a>
+            <a href="#" class="tag">#случайность</a>
+          </div>
+          <!-- /.tags -->
+        </div>
+        <!-- /.post-body -->
+        <div class="post-footer">
+          <div class="post-buttons">
+            <button class="post-button likes">
+              <svg width="19" height="20" class="icon icon-like">
+                <use xlink:href="img/icons.svg#like"></use>
+              </svg>
+              <span class="likes-counter">26</span>
+            </button>
+            <button class="post-button comments">
+              <svg width="21" height="21" class="icon icon-comment">
+                <use xlink:href="img/icons.svg#comment"></use>
+              </svg>
+              <span class="comments-counter">157</span>
+            </button>
+            <button class="post-button save">
+              <svg width="19" height="19" class="icon icon-save">
+                <use xlink:href="img/icons.svg#save"></use>
+              </svg>
+            </button>
+            <button class="post-button share">
+              <svg width="17" height="19" class="icon icon-share">
+                <use xlink:href="img/icons.svg#share"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- /.post-buttons -->
+          <div class="post-author">
+            <div class="author-about">
+              <a href="#" class="author-username">arteislamov</a>
+              <span class="post-time">5 минут назад</span>
+            </div>
+            <a href="#" class="author-link"><img src="img/avatar.jpeg" alt="avatar" class="author-avatar"></a>
+          </div>
+          <!-- /.post-author -->
+        </div>
+        <!-- /.post-footer -->
+      </section>
+    </main>
+    <!-- /.posts -->
+    <form action="#" class="add-post">
+      <input type="text" name="title" class="add-title" placeholder="Заголовок поста">
+      <textarea name="text" id="text" class="add-text" placeholder="Текст вашего поста"></textarea>
+      <input type="text" name="tags" class="add-tags" placeholder="Добавьте тэги, через запятую">
+      <div class="add-buttons">
+        <button type="submit" class="button add-button">
+          <svg class="icon icon-fire">
+            <use xlink:href="img/icons.svg#fire"></use>
+          </svg>
+          Опубликовать пост
+        </button>
+        <button class="button button-outline">
+          <svg class="icon icon-video">
+            <use xlink:href="img/icons.svg#video"></use>
+          </svg>
+          Видео
+        </button>
+        <button class="button button-outline">
+          <svg class="icon icon-photo">
+            <use xlink:href="img/icons.svg#photo"></use>
+          </svg>
+          Фото
+        </button>
+      </div>
+    </form>
+    <aside class="sidebar">
+  <div class="login">
+    <form class="login-form">
+      <h2 class="login-title">Авторизация</h2>
+      <input type="email" class="login-input login-email" name="email" minlength="3" required placeholder="email">
+      <input type="password" class="login-input login-password" name="passsword" minlength="3" required placeholder="password">
+      <a href="#" class="login-forget">Забыли пароль?</a>
+      <button class="login-sign-in" type="submit">
+        Войти
+      </button>
+      <a href="#" class="login-sign-up">Регистрация</a>
+    </form>
+  </div>
+      <div class="user">
+        <div class="user-container">
+          <a href="#" class="user-info">
+          <img width="40" height="40" src="https://pbs.twimg.com/profile_images/1160213358781452288/V7M8zqN2_400x400.jpg" alt="photo: user" class="user-avatar">
+          <span class="user-name">chepallino</span>
+        </a>
+        <!-- /.user-info -->
+        <a href="#" class="edit">
+          <img class="icon icon-edit" src="./img/edit.svg" alt="redaktirovat'">
+        </a>
+
+        <a href="#" class="exit">
+          <svg class="icon icon-exit">
+            <use xlink:href="img/icons.svg#exit"></use>
+          </svg>
+        </a>
+        </div>
+        <form class="edit-container">
+          <h2 class="edit-title">Редактировать</h2>
+
+          <label class="edit-lable">
+            Ваше имя
+            <input type="text" class="edit-input edit-username" name="username" minlength="3" placeholder="login" required>
+          </label>
+
+          <label class="edit-lable">
+            Аватарка<br>(только адрес URL)
+            <input type="text" class="edit-input edit-photo" name="username" placeholder="example: <https://...jpg>">
+          </label>
+
+          <button class="edit-btn">SAVE</button>
+
+        </form>
+        <!-- /.exit -->
+      </div>
+      <!-- /.user -->
+      <nav class="sidebar-nav">
+        <ul class="sidebar-menu">
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Ответы</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link active">Комментарии</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Оценки</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Сохраненное </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Подписки</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Заметки</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Игнор-лист</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="new-post.html" class="button button-new-post">
+        <svg class="icon icon-fire">
+          <use xlink:href="img/icons.svg#fire"></use>
+        </svg>
+        Опубликовать пост
+      </a>
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Lorem, ipsum dolor.</h2>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+          <a href="#" class="card-body-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur non omnis quo enim optio necessitatibus ipsa, animi earum temporibus!</a>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, illo illum vitae error et beatae omnis suscipit maiores eveniet totam dolores, ex velit obcaecati harum. Itaque nihil error unde architecto veniam enim accusantium quis quibusdam quas ratione, dicta reprehenderit placeat ipsa quos aperiam mollitia debitis deleniti cupiditate, nesciunt laudantium explicabo?</p>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+      <a href="#" class="ad"></a>
+    </aside>
+    <!-- /.sidebar -->
+  </div>
+  <!-- /.content -->
+  
+</body>
+</html>
